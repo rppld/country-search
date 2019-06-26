@@ -3,5 +3,13 @@
   "public": true,
   "name": "country-search",
   "builds": [{ "src": "api/index.js", "use": "@now/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/api/$1" }]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/$1",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ]
 }
