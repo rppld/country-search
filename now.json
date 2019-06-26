@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "public": true,
+  "name": "country-search",
+  "builds": [{ "src": "api/index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/api/$1" }]
+}
